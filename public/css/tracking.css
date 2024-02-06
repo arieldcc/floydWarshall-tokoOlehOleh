@@ -1,0 +1,60 @@
+.table-tracking td.track-status {
+  /* background-color: #83B2FF; */
+  background-color: #bbbbbb;
+  color: #343434;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-tracking td.track-status.selesai {
+  background-color: #8bf18b;
+}
+
+.table-tracking td.track-status.putih {
+    background-color: #f7fbf7;
+  }
+
+.table-tracking td.track-status.pengajuan {
+  background-color: #FFE981;
+}
+
+.table-tracking td.track-status.proses {
+  background-color: #83B2FF;
+}
+
+.table-tracking td.track-status.penetapan {
+  background-color: #5b5ded;
+}
+
+.table-tracking td.track-status.perbaikan {
+  background-color: #FF8650;
+}
+
+/* Form - Error Container */
+.validation-message ul {
+	display: none;
+	list-style: none;
+	margin: -20px -20px 30px -20px;
+	padding: 20px 20px 10px 20px;
+	background: #FFEFEF;
+}
+
+.validation-message ul label.error {
+	display: block;
+	padding-left: 22px;
+	position: relative;
+}
+
+.validation-message ul label.error:before {
+	font-family: 'FontAwesome';
+	font-weight: 900;
+	content: "\f00d";
+	position: absolute;
+	top: -3px;
+	left: 0;
+	font-size: 16px;
+	color: #D9534F;
+	display: inline-block;
+}
