@@ -7,6 +7,9 @@ use App\Models\node;
 use App\Models\TokoModel;
 use Illuminate\Http\Request;
 
+use function App\Helpers\buildInitialMatrix;
+use function App\Helpers\createTable;
+
 class RuteController extends Controller
 {
     public function awal(){

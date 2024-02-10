@@ -24,7 +24,7 @@
                     </a>
                     <div class="my-2"></div>
 
-                    <table class='class="table table-responsive table-bordered table-sm" width="100%" cellspacing="0"' id="dataTable" width="100%" cellspacing="0">
+                    <table class="table table-responsive table-bordered table-sm" width="100%" cellspacing="0"' id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>No.</th>
