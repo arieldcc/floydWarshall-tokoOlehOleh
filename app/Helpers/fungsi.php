@@ -1,7 +1,8 @@
 <?php
-
+namespace App\Helpers;
 use App\Models\EdgeModel;
 use App\Models\node;
+use App\Models\TokoModel;
 
 function buildInitialMatrix() {
     $nodes = node::all();
@@ -43,7 +44,7 @@ function floydWarshall($distances){
 function createTable($distances, $title)
 {
     $table = "<h2>$title</h2>";
-    $table .= '<table border="1" width="100%"><tr><th></th>';
+    $table .= '<table class="table table-responsive table-bordered table-sm" width="100%" cellspacing="0"><tr><th></th>';
 
     foreach ($distances as $start => $destinationDistances) {
         $table .= "<th>$start</th>";
@@ -59,4 +60,20 @@ function createTable($distances, $title)
     }
     $table .= '</table>';
     return $table;
+}
+
+class DashboardHelper
+{
+    public static function getDashboardStats()
+    {
+        $nodeCount = Node::count();
+        $edgeCount = EdgeModel::count();
+        $tokoCount = TokoModel::count();
+
+        return [
+            'nodeCount' => $nodeCount,
+            'edgeCount' => $edgeCount,
+            'tokoCount' => $tokoCount,
+        ];
+    }
 }

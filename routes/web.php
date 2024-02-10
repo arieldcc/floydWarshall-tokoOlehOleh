@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EdgeController;
 use App\Http\Controllers\JalanController;
 use App\Http\Controllers\RuteController;
@@ -56,4 +57,8 @@ Route::controller(RuteController::class)->group(function(){
     Route::get('/data-fw','awal');
     Route::get('/data-rutefw','rute_fw');
     Route::post('/data-rutefwproses','findShortestPath');
+});
+
+Route::controller(DashboardController::class)->group(function(){
+    Route::get('/dashboard','awal');
 });

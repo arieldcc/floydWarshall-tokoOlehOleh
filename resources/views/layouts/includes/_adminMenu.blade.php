@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/data-toko">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
         <div class="sidebar-brand-icon">
             <i class="fa-solid fa-building-user fa-bounce"></i>
         </div>
@@ -12,8 +12,8 @@
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item {{ $menu=='data-toko'? 'active':'' }}">
-        <a class="nav-link" href="/data-toko">
+    <li class="nav-item {{ $menu=='dashboard'? 'active':'' }}">
+        <a class="nav-link" href="/dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -29,12 +29,12 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item {{ $menu=='data-jalan'? 'active':'' }}">
         <a class="nav-link" href="/data-jalan">
-            <i class="fa-solid fa-building-user"></i>
+            <i class="fas fa-road"></i>
             <span>Data Jalan</span></a>
     </li>
     <li class="nav-item {{ $menu=='data-toko'? 'active':'' }}">
         <a class="nav-link" href="/data-toko">
-            <i class="fas fa-concierge-bell"></i>
+            <i class="fas fa-store"></i>
             <span>Data Toko</span></a>
     </li>
     {{-- <li class="nav-item {{ $menu=='floyd-warshall'? 'active':'' }}">
@@ -54,7 +54,7 @@
     <li class="nav-item {{ $menu=='data-edge'? 'active':'' }}">
         <a class="nav-link" href="/data-edge">
             {{-- <i class="fas fa-solid fa-list-ol"></i> --}}
-            <i class="fas fa-solid fa-folder-plus"></i>
+            <i class="fas fa-network-wired"></i>
             <span>Buat Edge</span></a>
     </li>
 
@@ -70,13 +70,13 @@
 
     <li class="nav-item {{ $menu=='data-fw'? 'active':'' }}">
         <a class="nav-link" href="/data-fw">
-            <i class="fa-solid fa-business-time fa-beat-fade"></i>
+            <i class="fas fa-chart-line"></i>
             <span>Algoritma Floyd Warshall</span></a>
     </li>
 
     <li class="nav-item {{ $menu=='data-rutefw'? 'active':'' }}">
         <a class="nav-link" href="/data-rutefw">
-            <i class="fa-solid fa-business-time fa-beat-fade"></i>
+            <i class="fas fa-route"></i>
             <span>Rute Floyd Warshall</span></a>
     </li>
 
