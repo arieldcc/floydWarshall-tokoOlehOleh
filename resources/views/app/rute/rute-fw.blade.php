@@ -158,8 +158,6 @@
         var node_awal;
         var node_akhir;
 
-
-
         $('#awal_id').change(function() {
             node_awal = $(this).val();
             console.log('Node Awal: ' + node_awal);

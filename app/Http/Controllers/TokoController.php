@@ -40,6 +40,8 @@ class TokoController extends Controller
             $validasiData['logo'] = $request->file('logo')->store('logo-toko');
         }
 
+        // dd($validasiData['logo']);
+
         TokoModel::create($validasiData);
 
         return redirect('data-toko')->with('sukses','Data berhasil di simpan!');
